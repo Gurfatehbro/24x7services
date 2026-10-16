@@ -35,6 +35,16 @@ const server = http.createServer((req, res) => {
       filePath = filePath + '/index.html';
     } else if (fs.existsSync(filePath + '.html')) {
       filePath = filePath + '.html';
+    } else {
+      // Case-insensitive file fallback
+      const dir = path.dirname(filePath);
+      const base = path.basename(filePath).toLowerCase();
+      if (fs.existsSync(dir) && fs.statSync(dir).isDirectory()) {
+        const found = fs.readdirSync(dir).find(f => f.toLowerCase() === base);
+        if (found) {
+          filePath = path.join(dir, found);
+        }
+      }
     }
   }
 

@@ -148,11 +148,20 @@ function processBrandPage(brand, isSubfolder = true) {
   // Whirlpool text adaptation if Whirlpool
   if (brand.id === 'whirlpool') {
     content = content.replace(/LG/g, 'Whirlpool');
-    content = content.replace(/Whirlpool-service-center\.jpg/gi, 'Whirlpool-service-center.jpg');
   }
-  if (brand.id === 'siemens') {
-    content = content.replace(/Siemens\.webp/gi, 'Siemens-service-center.jpg');
-  }
+
+  // Exact canonical casing for all brand logo badges so they load on all web servers (Linux/cPanel/GitHub)
+  content = content.replace(/assets\/img\/samsung-service-center\.jpg/gi, 'assets/img/Samsung-service-center.jpg');
+  content = content.replace(/assets\/img\/hitachi-service-center\.jpg/gi, 'assets/img/Hitachi-service-center.jpg');
+  content = content.replace(/assets\/img\/siemens\.webp/gi, 'assets/img/Siemens-service-center.jpg');
+  content = content.replace(/assets\/img\/siemens-service-center\.jpg/gi, 'assets/img/Siemens-service-center.jpg');
+  content = content.replace(/assets\/img\/whirlpool-service-center\.jpg/gi, 'assets/img/Whirlpool-service-center.jpg');
+  content = content.replace(/assets\/img\/lg-service-center\.jpg/gi, 'assets/img/LG-service-center.jpg');
+  content = content.replace(/assets\/img\/godrej-service-center\.jpg/gi, 'assets/img/Godrej-service-center.jpg');
+  content = content.replace(/assets\/img\/bosch-service-center\.jpg/gi, 'assets/img/Bosch-service-center.jpg');
+  content = content.replace(/assets\/img\/ifb-service-center\.jpg/gi, 'assets/img/IFB-service-center.jpg');
+  content = content.replace(/assets\/img\/panasonic-service-center\.jpg/gi, 'assets/img/Panasonic-service-center.jpg');
+  content = content.replace(/assets\/img\/haier-service-center\.jpg/gi, 'assets/img/Haier-service-center.jpg');
 
   // 1. Phone number replacements
   content = content.replace(/tel:\s*011-69290873\s*/gi, PHONE_TEL);

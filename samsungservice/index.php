@@ -403,7 +403,7 @@ h1.brands {
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
                         <div class="text-center">
-                        <p class="responsive"><img src="../assets/img/samsung-service-center.jpg" style="border:1px solid #ddd;"></p>    
+                        <p class="responsive"><img src="../assets/img/Samsung-service-center.jpg" style="border:1px solid #ddd;"></p>    
                         <h1 style="color:#ff0000;" class="brands">Samsung Service Centre - 24X7 Customer Care Support</h1>
 
    <p style="color:#000000;font-weight:bold;font-size:20px;text-align:center;">Samsung  Customer Service Center</p>
