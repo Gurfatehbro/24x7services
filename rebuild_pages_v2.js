@@ -88,7 +88,7 @@ function generateEnquiryForm(brandName, msgAction) {
                 <div style="background:#ffffff; border-radius:14px; padding:32px 28px; box-shadow:0 8px 30px rgba(0,0,0,0.06); border-top:4px solid #e63839;">
                     <div class="text-center mb-25">
                         <h2 style="color:#e63839; font-weight:800; font-size:26px; margin-bottom:6px;">Enquiry & Doorstep Service Booking</h2>						
-                        <p style="color:#64748b; font-size:15px; margin-bottom:0;">Fill the form below. We will get back to you within 15 minutes.</p>
+                        <p style="color:#64748b; font-size:15px; margin-bottom:0;">Doorstep Service in Delhi NCR. Fill the form below — we will get back to you within 15 minutes.</p>
                         <p style="color:#0f172a; font-weight:600; font-size:14px; margin-top:6px;">Or Call Now For Instant Assistance: <a href="${PHONE_TEL}" style="color:#e63839; font-weight:800;">📞 ${PHONE_RAW}</a></p>
                     </div>		
                     <form action="${msgAction}" method="post">		
@@ -125,8 +125,8 @@ function generateEnquiryForm(brandName, msgAction) {
                                 </select> 
                             </div>
                             <div class="col-12 mb-3">
-                                <label for="address" style="font-weight:600; color:#334155; margin-bottom:5px; display:block;">Your Address*</label>	
-                                <input type="text" id="address" name="address" placeholder="Your Address.." required style="width:100%; padding:11px 14px; border:1px solid #cbd5e1; border-radius:8px; font-size:15px;">	
+                                <label for="address" style="font-weight:600; color:#334155; margin-bottom:5px; display:block;">Your Address (Delhi NCR)*</label>	
+                                <input type="text" id="address" name="address" placeholder="Your Address in Delhi NCR.." required style="width:100%; padding:11px 14px; border:1px solid #cbd5e1; border-radius:8px; font-size:15px;">	
                             </div>
                             <div class="col-12 text-center mt-2">
                                 <input type="submit" name="Send" value="Submit" style="background:#e63839; color:#fff; border:none; padding:13px 45px; font-size:17px; font-weight:700; border-radius:28px; cursor:pointer; width:100%; max-width:280px; box-shadow:0 4px 15px rgba(230,56,57,0.3); transition:all 0.3s ease;">	
@@ -189,10 +189,33 @@ function processBrandPage(brand, isSubfolder = true) {
   // 5. Clean syntax glitches from template
   content = content.replace(/Copyright © 2025/g, 'Copyright © 2026');
   content = content.replace(/<div class="col-lg-3 col-sm-6">-->/g, '<div class="col-lg-3 col-sm-6">');
-  content = content.replace(/<p> India<\/p\s*\n/g, '<p> India</p>\n');
   content = content.replace(/<\/script><script src=/g, '<script src=');
 
-  // 5b. Update Service names in Nav & Footer: Refrigerator, Microwave, Washing Machine
+  // 5a. Location - Delhi in Header Widget
+  const locationHeaderWidget = `
+                            <div class="header__widget text-start">
+                                <div class="header__widget--icon header__widget--icon__phone">
+                                    <i class="flaticon-pin"></i>
+                                </div>
+                                <div class="header__widget--text">
+                                    <span>Service Location</span>
+                                    <h4>Delhi, India</h4>
+                                </div>
+                            </div>`;
+  content = content.replace(/<div class="header__widget text-start">\s*<\/div>/g, locationHeaderWidget);
+
+  // 5b. Location - Delhi in Footer Address Widget
+  content = content.replace(/<h4 class="footer__widget--title">Address\s*:\s*<\/h4>\s*<p>\s*India<\/p>?/gi, '<h4 class="footer__widget--title">Address : </h4>\n                                <p>Delhi, India</p>');
+  content = content.replace(/<p>\s*India<\/p\s*[\n>]/gi, '<p>Delhi, India</p>\n');
+  content = content.replace(/<p>\s*India<\/p>/gi, '<p>Delhi, India</p>');
+
+  // 5c. Standardize Fast Reliable Home Appliances Repair Service Centre Delhi
+  content = content.replace(/Fast Reliable Home Appliances Repair Service Centre(?:\s*Delhi)?/gi, 'Fast Reliable Home Appliances Repair Service Centre Delhi');
+
+  // 5d. Doorstep service in Delhi in welcome text
+  content = content.replace(/doorstep service — saving your valuable time/gi, 'doorstep service in Delhi — saving your valuable time');
+
+  // 5e. Update Service names in Nav & Footer: Refrigerator, Microwave, Washing Machine
   content = content.replace(/<li><a href="[^"]*">\s*Split AC Repair\s*<\/a><\/li>/gi, '<li><a href="#contact">Refrigerator Repair</a></li>');
   content = content.replace(/<li><a href="[^"]*">\s*Window AC Repair\s*<\/a><\/li>/gi, '<li><a href="#contact">Microwave Repair</a></li>');
   content = content.replace(/<li><a href="[^"]*">\s*Ductless AC Repair\s*<\/a><\/li>/gi, '<li><a href="#contact">Washing Machine Repair</a></li>');
@@ -202,10 +225,10 @@ function processBrandPage(brand, isSubfolder = true) {
   content = content.replace(/Window AC Repair/g, 'Microwave Repair');
   content = content.replace(/Ductless AC Repair/g, 'Washing Machine Repair');
 
-  // 5c. Update About Us text to include Refrigerator, Microwave, Washing Machine
+  // 5f. Update About Us text to include Refrigerator, Microwave, Washing Machine
   content = content.replace(
     /We provide professional air conditioner repair, installation, and maintenance services for all leading brands\.\s*Our goal is to deliver efficient cooling, energy savings, and peace of mind through expert care and top-quality service\./gi,
-    'We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.'
+    'We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.'
   );
 
   // 6. REMOVE ANY TOP ENQUIRY FORM completely (between header and main)

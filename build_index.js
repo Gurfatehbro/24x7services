@@ -25,8 +25,28 @@ rawIndex = rawIndex.replace(
 
 rawIndex = rawIndex.replace(/Copyright © 2025/g, 'Copyright © 2026');
 rawIndex = rawIndex.replace(/<div class="col-lg-3 col-sm-6">-->/g, '<div class="col-lg-3 col-sm-6">');
-rawIndex = rawIndex.replace(/<p> India<\/p\s*\n/g, '<p> India</p>\n');
 rawIndex = rawIndex.replace(/<\/script><script src=/g, '<script src=');
+
+// Location - Delhi in Header Widget
+const locationHeaderWidget = `
+                            <div class="header__widget text-start">
+                                <div class="header__widget--icon header__widget--icon__phone">
+                                    <i class="flaticon-pin"></i>
+                                </div>
+                                <div class="header__widget--text">
+                                    <span>Service Location</span>
+                                    <h4>Delhi, India</h4>
+                                </div>
+                            </div>`;
+rawIndex = rawIndex.replace(/<div class="header__widget text-start">\s*<\/div>/g, locationHeaderWidget);
+
+// Location - Delhi in Footer Address Widget
+rawIndex = rawIndex.replace(/<h4 class="footer__widget--title">Address\s*:\s*<\/h4>\s*<p>\s*India<\/p>?/gi, '<h4 class="footer__widget--title">Address : </h4>\n                                <p>Delhi, India</p>');
+rawIndex = rawIndex.replace(/<p>\s*India<\/p\s*[\n>]/gi, '<p>Delhi, India</p>\n');
+rawIndex = rawIndex.replace(/<p>\s*India<\/p>/gi, '<p>Delhi, India</p>');
+
+// Slider feature: Delhi, India
+rawIndex = rawIndex.replace(/<li><i class="flaticon-pin"><\/i>Pan India<\/li>/gi, '<li><i class="flaticon-pin"></i>Delhi, India</li>');
 
 // Update services in Nav and Footer
 rawIndex = rawIndex.replace(/<li><a href="[^"]*">\s*Split AC Repair\s*<\/a><\/li>/gi, '<li><a href="#services">Refrigerator Repair</a></li>');
@@ -36,15 +56,15 @@ rawIndex = rawIndex.replace(/<li><a href="[^"]*">\s*Ductless AC Repair\s*<\/a><\
 // Update Service Cards on Homepage
 rawIndex = rawIndex.replace(
   /<h4 class="awork__text--title mb-15"><a href="">Split AC Repair<\/a><\/h4>\s*<p class="mb-15">Is your split AC not cooling[^<]*<\/p>/gi,
-  '<h4 class="awork__text--title mb-15"><a href="#contact">Refrigerator Repair</a></h4><p class="mb-15">Is your refrigerator not cooling, leaking water, or making unusual noises? Our certified technicians provide fast doorstep diagnostic and genuine repair services for all single and double door refrigerators.</p>'
+  '<h4 class="awork__text--title mb-15"><a href="#contact">Refrigerator Repair</a></h4><p class="mb-15">Is your refrigerator not cooling, leaking water, or making unusual noises? Our certified technicians provide fast doorstep diagnostic and genuine repair services for all single and double door refrigerators across Delhi NCR.</p>'
 );
 rawIndex = rawIndex.replace(
   /<h4 class="awork__text--title mb-15"><a href="">Window AC Repair<\/a><\/h4>\s*<p class="mb-15">Is your window AC not cooling properly[^<]*<\/p>/gi,
-  '<h4 class="awork__text--title mb-15"><a href="#contact">Microwave Repair</a></h4><p class="mb-15">Microwave oven sparking, not heating, or touchpad unresponsive? Don\'t worry — our certified technicians deliver quick, safe, and professional microwave repair at your home or office.</p>'
+  '<h4 class="awork__text--title mb-15"><a href="#contact">Microwave Repair</a></h4><p class="mb-15">Microwave oven sparking, not heating, or touchpad unresponsive? Don\'t worry — our certified technicians deliver quick, safe, and professional microwave repair at your home or office across Delhi NCR.</p>'
 );
 rawIndex = rawIndex.replace(
   /<h4 class="awork__text--title mb-15"><a href="">Ductless AC Repair<\/a><\/h4>\s*<p class="mb-15">Is your ductless AC not cooling properly[^<]*<\/p>/gi,
-  '<h4 class="awork__text--title mb-15"><a href="#contact">Washing Machine Repair</a></h4><p class="mb-15">Is your washing machine not spinning, leaking, or showing error codes? Our expert technicians specialize in front load, top load, and semi-automatic washing machine repairs right at your doorstep.</p>'
+  '<h4 class="awork__text--title mb-15"><a href="#contact">Washing Machine Repair</a></h4><p class="mb-15">Is your washing machine not spinning, leaking, or showing error codes? Our expert technicians specialize in front load, top load, and semi-automatic washing machine repairs right at your doorstep across Delhi NCR.</p>'
 );
 
 // General occurrences of service titles
@@ -55,7 +75,7 @@ rawIndex = rawIndex.replace(/Ductless AC Repair/g, 'Washing Machine Repair');
 // Update About Us text
 rawIndex = rawIndex.replace(
   /We provide professional air conditioner repair, installation, and maintenance services for all leading brands\.\s*Our goal is to deliver efficient cooling, energy savings, and peace of mind through expert care and top-quality service\./gi,
-  'We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.'
+  'We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.'
 );
 
 // Enhance navigation menu to include Brand Service Centers dropdown
@@ -87,7 +107,7 @@ const brandGridSection = `
             <div class="col-12">
                 <span style="color:#e63839;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:14px;">Authorized Multi-Brand Support</span>
                 <h2 style="font-weight:800;color:#1e293b;margin-top:5px;">Select Your Appliance Brand Service Center</h2>
-                <p style="color:#64748b;max-width:650px;margin:10px auto 0;">Instant doorstep repair & service across India. Dial Toll-Free: <a href="${PHONE_TEL}" style="color:#e63839;font-weight:700;">${PHONE_RAW}</a></p>
+                <p style="color:#64748b;max-width:650px;margin:10px auto 0;">Instant doorstep repair & service across Delhi NCR. Dial Toll-Free: <a href="${PHONE_TEL}" style="color:#e63839;font-weight:700;">${PHONE_RAW}</a></p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">

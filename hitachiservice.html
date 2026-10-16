@@ -265,8 +265,15 @@ h1.brands {
                     </div>
                     <div class="col-xl-10 col-lg-9">
                         <div class="header-bottom-right text-end">
+                            
                             <div class="header__widget text-start">
-                                
+                                <div class="header__widget--icon header__widget--icon__phone">
+                                    <i class="flaticon-pin"></i>
+                                </div>
+                                <div class="header__widget--text">
+                                    <span>Service Location</span>
+                                    <h4>Delhi, India</h4>
+                                </div>
                             </div>
                             
                             <div class="header__widget text-start">
@@ -412,9 +419,9 @@ h1.brands {
 <h3 class="bold"><span style="color:#ff0000;">Call Us Now</span> <a href="tel:18002700275">18002700275</a></h3>
 <p><a href="">Hitachi  Repair Service Centre </a>, Customer Care, Helpline: <a href="tel:18002700275">18002700275</a></p>
 </div>
-<p class="p-left"><strong>Welcome to the Hitachi Customer Service Center, your trusted destination for expert repair, maintenance, and installation of Hitachi appliances. Our mission is to provide hassle-free, doorstep service — saving your valuable time and effort while ensuring complete satisfaction.</p>
+<p class="p-left"><strong>Welcome to the Hitachi Customer Service Center, your trusted destination for expert repair, maintenance, and installation of Hitachi appliances. Our mission is to provide hassle-free, doorstep service in Delhi — saving your valuable time and effort while ensuring complete satisfaction.</p>
 <div class="center">
-<p>Fast Reliable Home Appliances Repair Service Centre </p>
+<p>Fast Reliable Home Appliances Repair Service Centre Delhi </p>
 </div>
 
 <!-- Enquiry Form Section (Positioned directly after Intro & Call Us Now) -->
@@ -425,7 +432,7 @@ h1.brands {
                 <div style="background:#ffffff; border-radius:14px; padding:32px 28px; box-shadow:0 8px 30px rgba(0,0,0,0.06); border-top:4px solid #e63839;">
                     <div class="text-center mb-25">
                         <h2 style="color:#e63839; font-weight:800; font-size:26px; margin-bottom:6px;">Enquiry & Doorstep Service Booking</h2>						
-                        <p style="color:#64748b; font-size:15px; margin-bottom:0;">Fill the form below. We will get back to you within 15 minutes.</p>
+                        <p style="color:#64748b; font-size:15px; margin-bottom:0;">Doorstep Service in Delhi NCR. Fill the form below — we will get back to you within 15 minutes.</p>
                         <p style="color:#0f172a; font-weight:600; font-size:14px; margin-top:6px;">Or Call Now For Instant Assistance: <a href="tel:18002700275" style="color:#e63839; font-weight:800;">📞 18002700275</a></p>
                     </div>		
                     <form action="msg.php" method="post">		
@@ -462,8 +469,8 @@ h1.brands {
                                 </select> 
                             </div>
                             <div class="col-12 mb-3">
-                                <label for="address" style="font-weight:600; color:#334155; margin-bottom:5px; display:block;">Your Address*</label>	
-                                <input type="text" id="address" name="address" placeholder="Your Address.." required style="width:100%; padding:11px 14px; border:1px solid #cbd5e1; border-radius:8px; font-size:15px;">	
+                                <label for="address" style="font-weight:600; color:#334155; margin-bottom:5px; display:block;">Your Address (Delhi NCR)*</label>	
+                                <input type="text" id="address" name="address" placeholder="Your Address in Delhi NCR.." required style="width:100%; padding:11px 14px; border:1px solid #cbd5e1; border-radius:8px; font-size:15px;">	
                             </div>
                             <div class="col-12 text-center mt-2">
                                 <input type="submit" name="Send" value="Submit" style="background:#e63839; color:#fff; border:none; padding:13px 45px; font-size:17px; font-weight:700; border-radius:28px; cursor:pointer; width:100%; max-width:280px; box-shadow:0 4px 15px rgba(230,56,57,0.3); transition:all 0.3s ease;">	
@@ -549,7 +556,7 @@ h1.brands {
                      <div class="col-lg-3 col-sm-6">
                       <div class="footer__widget mb-30 wow fadeInUp" data-wow-delay=".3s"> 
                               <h4 class="footer__widget--title">About Us</h4> 
-                            <p> At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p> 
+                            <p> At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p> 
                            
                              
                             
@@ -583,8 +590,9 @@ h1.brands {
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer__widget mb-30 pl-85 wow fadeInUp" data-wow-delay="1.2s">
                             <h4 class="footer__widget--title">Address : </h4>
-                           
-                                <p> India</p>
+                                <p>Delhi, India</p>
+                                
+                               
                          </div>
                     </div>
                 </div>

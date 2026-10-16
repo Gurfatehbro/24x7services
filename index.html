@@ -160,8 +160,15 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                     </div>
                     <div class="col-xl-10 col-lg-9">
                         <div class="header-bottom-right text-end">
+                            
                             <div class="header__widget text-start">
-                                
+                                <div class="header__widget--icon header__widget--icon__phone">
+                                    <i class="flaticon-pin"></i>
+                                </div>
+                                <div class="header__widget--text">
+                                    <span>Service Location</span>
+                                    <h4>Delhi, India</h4>
+                                </div>
                             </div>
                             
                             <div class="header__widget text-start">
@@ -352,7 +359,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                         <h4>Contact Info</h4>
                         <ul>
                             <li><i class="flaticon-history"></i>Sunday to Saturday</li>
-                            <li><i class="flaticon-pin"></i>Pan India</li>
+                            <li><i class="flaticon-pin"></i>Delhi, India</li>
                             
                         </ul>
                         
@@ -437,7 +444,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                                 <h6 class="subtitle mb-20">About company</h6>
                                 <h2 class="section-title">Trusted Air Conditioner Repair Services Company</h2>
                             </div>
-                            <p>At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p>
+                            <p>At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p>
                             <p>With years of experience and a team of certified professionals, we specialize in both residential and commercial AC systems.</p>
                             <p>Our Mission: To keep your home and workplace cool, comfortable, and energy-efficient — all year round</p>
 
@@ -471,7 +478,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                                 </div>
                             </div>
                             <div class="awork__text text-center">
-                                <h4 class="awork__text--title mb-15"><a href="#contact">Refrigerator Repair</a></h4><p class="mb-15">Is your refrigerator not cooling, leaking water, or making unusual noises? Our certified technicians provide fast doorstep diagnostic and genuine repair services for all single and double door refrigerators.</p>
+                                <h4 class="awork__text--title mb-15"><a href="#contact">Refrigerator Repair</a></h4><p class="mb-15">Is your refrigerator not cooling, leaking water, or making unusual noises? Our certified technicians provide fast doorstep diagnostic and genuine repair services for all single and double door refrigerators across Delhi NCR.</p>
                                 <div class="aprice-btn text-center">
                                     <a href="" class="theme-btn grey-btn">Read More </a>
                                 </div>
@@ -488,7 +495,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                                 </div>
                             </div>
                             <div class="awork__text text-center">
-                                <h4 class="awork__text--title mb-15"><a href="#contact">Microwave Repair</a></h4><p class="mb-15">Microwave oven sparking, not heating, or touchpad unresponsive? Don't worry — our certified technicians deliver quick, safe, and professional microwave repair at your home or office.</p>
+                                <h4 class="awork__text--title mb-15"><a href="#contact">Microwave Repair</a></h4><p class="mb-15">Microwave oven sparking, not heating, or touchpad unresponsive? Don't worry — our certified technicians deliver quick, safe, and professional microwave repair at your home or office across Delhi NCR.</p>
                                 <div class="aprice-btn text-center">
                                     <a href="" class="theme-btn grey-btn">Read More </a>
                                 </div>
@@ -505,7 +512,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                                 </div>
                             </div>
                             <div class="awork__text text-center">
-                                <h4 class="awork__text--title mb-15"><a href="#contact">Washing Machine Repair</a></h4><p class="mb-15">Is your washing machine not spinning, leaking, or showing error codes? Our expert technicians specialize in front load, top load, and semi-automatic washing machine repairs right at your doorstep.</p>
+                                <h4 class="awork__text--title mb-15"><a href="#contact">Washing Machine Repair</a></h4><p class="mb-15">Is your washing machine not spinning, leaking, or showing error codes? Our expert technicians specialize in front load, top load, and semi-automatic washing machine repairs right at your doorstep across Delhi NCR.</p>
                                 <div class="aprice-btn text-center">
                                     <a href="" class="theme-btn grey-btn">Read More </a>
                                 </div>
@@ -717,7 +724,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
             <div class="col-12">
                 <span style="color:#e63839;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:14px;">Authorized Multi-Brand Support</span>
                 <h2 style="font-weight:800;color:#1e293b;margin-top:5px;">Select Your Appliance Brand Service Center</h2>
-                <p style="color:#64748b;max-width:650px;margin:10px auto 0;">Instant doorstep repair & service across India. Dial Toll-Free: <a href="tel:18002700275" style="color:#e63839;font-weight:700;">18002700275</a></p>
+                <p style="color:#64748b;max-width:650px;margin:10px auto 0;">Instant doorstep repair & service across Delhi NCR. Dial Toll-Free: <a href="tel:18002700275" style="color:#e63839;font-weight:700;">18002700275</a></p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
@@ -847,7 +854,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                      <div class="col-lg-3 col-sm-6">
                       <div class="footer__widget mb-30 wow fadeInUp" data-wow-delay=".3s"> 
                               <h4 class="footer__widget--title">About Us</h4> 
-                            <p> At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p> 
+                            <p> At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p> 
                            
                              
                             
@@ -881,8 +888,9 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer__widget mb-30 pl-85 wow fadeInUp" data-wow-delay="1.2s">
                             <h4 class="footer__widget--title">Address : </h4>
-                           
-                                <p> India</p>
+                                <p>Delhi, India</p>
+                                
+                               
                          </div>
                     </div>
                 </div>
