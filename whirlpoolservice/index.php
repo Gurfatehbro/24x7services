@@ -84,6 +84,121 @@
   line-height: 48px !important;
   text-decoration: none !important;
 }
+
+/* Squared image edges for mobile and desktop */
+img, .img-fluid, .brand-top-banner-section img, .service-doorstep-image-wrap img, .brand-card img, .responsive img, .responsive1 img, .awork__img img {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+}
+
+/* Tight cohesive spacing between logos, headlines, and content */
+.blog-details-area {
+  padding-top: 25px !important;
+  padding-bottom: 40px !important;
+}
+.brand-top-banner-section {
+  margin: 10px 0 15px 0 !important;
+}
+.responsive {
+  margin-bottom: 8px !important;
+}
+.responsive img {
+  border: 1px solid #e2e8f0 !important;
+  max-height: 75px !important;
+  width: auto !important;
+  display: inline-block !important;
+}
+h1.brands {
+  margin-top: 6px !important;
+  margin-bottom: 4px !important;
+  font-size: 26px !important;
+  line-height: 1.25 !important;
+}
+.text-center p {
+  margin-bottom: 4px !important;
+  line-height: 1.35 !important;
+}
+.text-center h3.bold {
+  margin-top: 8px !important;
+  margin-bottom: 4px !important;
+  font-size: 22px !important;
+}
+.p-left {
+  margin-top: 10px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.5 !important;
+}
+.center {
+  margin: 6px 0 !important;
+}
+
+@media (max-width: 767px) {
+  .blog-details-area {
+    padding-top: 12px !important;
+    padding-bottom: 25px !important;
+  }
+  .brand-top-banner-section {
+    margin: 4px 0 10px 0 !important;
+  }
+  .brand-top-banner-section .container,
+  .service-doorstep-image-wrap .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+  .brand-top-banner-section img,
+  .service-doorstep-image-wrap img {
+    border-radius: 0px !important;
+    width: 100% !important;
+  }
+  h1.brands {
+    font-size: 19px !important;
+    margin: 4px 0 3px 0 !important;
+    line-height: 1.22 !important;
+  }
+  .text-center p[style*="font-size:20px"] {
+    font-size: 15px !important;
+    margin: 2px 0 !important;
+  }
+  .text-center h3.bold {
+    font-size: 18px !important;
+    margin: 4px 0 3px 0 !important;
+  }
+  .text-center p {
+    font-size: 13.5px !important;
+    margin-bottom: 3px !important;
+  }
+  .responsive {
+    margin-bottom: 5px !important;
+  }
+  .responsive img {
+    max-height: 55px !important;
+  }
+  .p-left {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+    margin: 6px 0 !important;
+  }
+  .center p {
+    font-size: 13px !important;
+    margin: 4px 0 !important;
+  }
+  .enquiry-section-container {
+    margin: 10px 0 !important;
+    padding: 10px 0 !important;
+  }
+  .enquiry-section-container .row > div {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .enquiry-section-container div[style*="padding:32px"] {
+    padding: 18px 14px !important;
+  }
+  img {
+    border-radius: 0px !important;
+  }
+}
 </style>
 
 </head>
@@ -270,9 +385,9 @@
     </header>
 
 <!-- Top Brand Showroom Showcase Banner from Google Drive -->
-<div class="brand-top-banner-section" style="width:100%; margin:20px 0 25px 0;">
-    <div class="container text-center">
-        <img src="../assets/img/banners/whirlpool-banner.jpg" class="img-fluid" alt="Whirlpool Service Center Showroom" style="border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.12); width:100%; max-height:550px; object-fit:cover;">
+<div class="brand-top-banner-section" style="width:100%; margin:15px 0 20px 0;">
+    <div class="container text-center p-0">
+        <img src="../assets/img/banners/whirlpool-banner.jpg" class="img-fluid" alt="Whirlpool Service Center Showroom" style="border-radius:0px !important; box-shadow:0 6px 20px rgba(0,0,0,0.08); width:100%; max-height:550px; object-fit:cover; display:block; margin:0 auto;">
     </div>
 </div>
 
@@ -291,11 +406,11 @@
                         <p class="responsive"><img src="../assets/img/Whirlpool-service-center.jpg" style="border:1px solid #ddd;"></p>    
                         <h1 style="color:#ff0000;" class="brands">Whirlpool Service Centre - 24X7 Customer Care Support</h1>
 
-   <p style="color:#000000;font-weight:bold;font-size:20px;text-align:center;">Whirlpool  Customer Service Center</p><br/>
+   <p style="color:#000000;font-weight:bold;font-size:20px;text-align:center;">Whirlpool  Customer Service Center</p>
  
  
-<h3 class="bold"><span style="color:#ff0000;">Call Us Now</span> <a href="tel:18002700275">18002700275</a></h3><br/>
-<p><a href="">Whirlpool  Repair Service Centre </a>, Customer Care, Helpline: <a href="tel:18002700275">18002700275</a></p><br/>
+<h3 class="bold"><span style="color:#ff0000;">Call Us Now</span> <a href="tel:18002700275">18002700275</a></h3>
+<p><a href="">Whirlpool  Repair Service Centre </a>, Customer Care, Helpline: <a href="tel:18002700275">18002700275</a></p>
 </div>
 <p class="p-left"><strong>Welcome to the Whirlpool Customer Service Center, your trusted destination for expert repair, maintenance, and installation of Whirlpool appliances. Our mission is to provide hassle-free, doorstep service — saving your valuable time and effort while ensuring complete satisfaction.</p>
 <div class="center">
@@ -358,6 +473,14 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+<!-- Doorstep Service Repair Image (Generated) -->
+<div class="text-center my-3 service-doorstep-image-wrap">
+    <div class="container text-center p-0">
+        <img src="../assets/img/service-doorstep-repair.jpg" class="img-fluid" alt="Whirlpool Doorstep Appliance Repair Service" style="border-radius:0px !important; box-shadow:0 6px 20px rgba(0,0,0,0.08); width:100%; max-height:520px; object-fit:cover; display:block; margin:0 auto;">
     </div>
 </div>
 

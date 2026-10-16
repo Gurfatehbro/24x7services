@@ -267,6 +267,13 @@ const customPulseStyle = `
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
 }
+
+/* Squared image edges for mobile and desktop */
+img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img, .responsive1 img {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+}
 </style>
 `;
 if (!rawIndex.includes('agyPulse')) {
