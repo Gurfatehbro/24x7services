@@ -1,0 +1,35 @@
+# 24X7 Customer Care Support - Apache Configuration
+RewriteEngine On
+RewriteBase /
+
+# Force trailing slash on existing directories
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [L,R=301]
+
+# Route /brandservice to brandservice/
+RewriteRule ^lgservice$ lgservice/ [L,R=301]
+RewriteRule ^godrejservice$ godrejservice/ [L,R=301]
+RewriteRule ^samsungservice$ samsungservice/ [L,R=301]
+RewriteRule ^boschservice$ boschservice/ [L,R=301]
+RewriteRule ^ifbservice$ ifbservice/ [L,R=301]
+RewriteRule ^hitachiservice$ hitachiservice/ [L,R=301]
+RewriteRule ^panasonicservice$ panasonicservice/ [L,R=301]
+RewriteRule ^haierservice$ haierservice/ [L,R=301]
+RewriteRule ^siemensservice$ siemensservice/ [L,R=301]
+RewriteRule ^simensservice$ simensservice/ [L,R=301]
+
+# Support .php extensions without typing .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Support .html extensions without typing .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Compression and Caching
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>

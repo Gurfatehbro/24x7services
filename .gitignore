@@ -1,0 +1,6 @@
+node_modules/
+*.log
+gdrive.html
+test.jpg
+.DS_Store
+Thumbs.db
