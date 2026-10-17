@@ -243,6 +243,15 @@ function processBrandPage(brand, isSubfolder = true) {
   // Also remove standalone <img src="assets/img/banner.jpeg" class="img-fluid" alt="img">
   content = content.replace(/<img src="assets\/img\/banner\.jpeg"[^>]*>/gi, '');
 
+  // 7b. Upgrade Official Brand Logo into a dedicated big, seeable centered card
+  content = content.replace(/<p class="responsive">\s*<img src="([^"]+)"[^>]*>\s*<\/p>/gi, (match, src) => {
+    return `<div class="brand-official-logo-wrapper text-center my-3">
+        <div class="brand-official-logo-box">
+            <img src="${src}" alt="${brand.name} Official Service Center Logo" class="brand-official-logo-img">
+        </div>
+    </div>`;
+  });
+
   // 8. Single image from Google Drive folder placed AT THE TOP
   const bannerPrefix = isSubfolder ? '../' : '';
   const singleImageSrc = bannerPrefix + brand.bannerImg;
@@ -375,51 +384,147 @@ img, .img-fluid, .brand-top-banner-section img, .service-doorstep-image-wrap img
   -moz-border-radius: 0px !important;
 }
 
-/* Tight cohesive spacing between logos, headlines, and content */
+/* Official Brand Logo Box - Prominent, Big & Seeable */
+.brand-official-logo-wrapper, .responsive {
+  text-align: center !important;
+  margin: 12px auto 16px auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.brand-official-logo-box {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+  padding: 12px 28px !important;
+  border-radius: 12px !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important;
+  max-width: 90% !important;
+}
+.brand-official-logo-img, .responsive img {
+  max-height: 125px !important;
+  max-width: 340px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+  background: #ffffff !important;
+  border: none !important;
+}
+
+/* Tight cohesive spacing and Center Typography across all content */
 .blog-details-area {
   padding-top: 25px !important;
   padding-bottom: 40px !important;
+  text-align: center !important;
+}
+.blog-details-area .col-md-12,
+.blog-details-area .col-lg-12,
+.blog-details-area .text-center {
+  text-align: center !important;
 }
 .brand-top-banner-section {
   margin: 10px 0 15px 0 !important;
 }
-.responsive {
-  margin-bottom: 8px !important;
-}
-.responsive img {
-  border: 1px solid #e2e8f0 !important;
-  max-height: 75px !important;
-  width: auto !important;
-  display: inline-block !important;
-}
 h1.brands {
-  margin-top: 6px !important;
-  margin-bottom: 4px !important;
+  margin-top: 10px !important;
+  margin-bottom: 6px !important;
   font-size: 26px !important;
   line-height: 1.25 !important;
+  text-align: center !important;
 }
 .text-center p {
   margin-bottom: 4px !important;
   line-height: 1.35 !important;
+  text-align: center !important;
 }
 .text-center h3.bold {
   margin-top: 8px !important;
   margin-bottom: 4px !important;
   font-size: 22px !important;
+  text-align: center !important;
 }
+.blog-details-area .p-left,
 .p-left {
   margin-top: 10px !important;
   margin-bottom: 8px !important;
-  line-height: 1.5 !important;
+  line-height: 1.6 !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 960px !important;
+  display: block !important;
 }
 .center {
-  margin: 6px 0 !important;
+  margin: 8px 0 !important;
+  text-align: center !important;
+}
+.center p {
+  text-align: center !important;
+}
+
+/* Need More Help section typography centered */
+.blog-details-area h1:not(.brands) {
+  text-align: center !important;
+  margin-top: 35px !important;
+  margin-bottom: 8px !important;
+  font-size: 28px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+}
+.blog-details-area p[dir="ltr"] {
+  text-align: center !important;
+  margin-bottom: 16px !important;
+  color: #64748b !important;
+  font-size: 16px !important;
+}
+.call-now {
+  display: inline-block !important;
+  text-align: center !important;
+  margin: 12px auto 35px auto !important;
+  background: #e63839 !important;
+  padding: 13px 36px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 18px rgba(230, 56, 57, 0.35) !important;
+}
+.call-now a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+}
+
+/* Keep form input labels properly left-aligned inside cards for usability */
+.enquiry-section-container label {
+  text-align: left !important;
+  display: block !important;
+}
+.enquiry-section-container input,
+.enquiry-section-container select {
+  text-align: left !important;
 }
 
 @media (max-width: 767px) {
   .blog-details-area {
     padding-top: 12px !important;
     padding-bottom: 25px !important;
+    text-align: center !important;
+  }
+  .blog-details-area .col-md-12,
+  .blog-details-area .p-left,
+  .p-left {
+    text-align: center !important;
+  }
+  .brand-official-logo-box {
+    padding: 10px 18px !important;
+  }
+  .brand-official-logo-img, .responsive img {
+    max-height: 85px !important;
+    max-width: 250px !important;
   }
   .brand-top-banner-section {
     margin: 4px 0 10px 0 !important;
@@ -452,20 +557,22 @@ h1.brands {
     font-size: 13.5px !important;
     margin-bottom: 3px !important;
   }
-  .responsive {
-    margin-bottom: 5px !important;
-  }
-  .responsive img {
-    max-height: 55px !important;
-  }
   .p-left {
     font-size: 13.5px !important;
     line-height: 1.45 !important;
     margin: 6px 0 !important;
+    text-align: center !important;
   }
   .center p {
     font-size: 13px !important;
     margin: 4px 0 !important;
+    text-align: center !important;
+  }
+  .call-now {
+    padding: 11px 26px !important;
+  }
+  .call-now a {
+    font-size: 16px !important;
   }
   .enquiry-section-container {
     margin: 10px 0 !important;
