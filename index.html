@@ -83,13 +83,9 @@
   line-height: 48px !important;
   text-decoration: none !important;
 }
-.brand-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
-}
 
 /* Squared image edges for mobile and desktop */
-img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img, .responsive1 img {
+img, .img-fluid, .awork__img img, .responsive img, .responsive1 img {
   border-radius: 0px !important;
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
@@ -716,133 +712,7 @@ img, .img-fluid, .brand-card, .brand-card img, .awork__img img, .responsive img,
         
         
 
-    
-<!-- Brand Service Centers Showcase Section -->
-<section class="brand-centers-section pt-60 pb-60" style="background:#f8f9fa;">
-    <div class="container">
-        <div class="row text-center mb-40">
-            <div class="col-12">
-                <span style="color:#e63839;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:14px;">Authorized Multi-Brand Support</span>
-                <h2 style="font-weight:800;color:#1e293b;margin-top:5px;">Select Your Appliance Brand Service Center</h2>
-                <p style="color:#64748b;max-width:650px;margin:10px auto 0;">Instant doorstep repair & service across Delhi NCR. Dial Toll-Free: <a href="tel:18002700275" style="color:#e63839;font-weight:700;">18002700275</a></p>
-            </div>
-        </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/lg-banner.jpg" alt="LG Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">LG Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">AC, Refrigerator, Washing Machine, Microwave Repair</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="lgservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/godrej-banner.jpg" alt="Godrej Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Godrej Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Refrigerator, AC, Washing Machine Doorstep Care</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="godrejservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/samsung-banner.jpg" alt="Samsung Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Samsung Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Fast Samsung Home Appliances Servicing & Genuine Parts</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="samsungservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/bosch-banner.jpg" alt="Bosch Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Bosch Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Washing Machine, Dryer, Dishwasher & Fridge</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="boschservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/ifb-banner.jpg" alt="IFB Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">IFB Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Front Load, Top Load, Microwave & AC Repair</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="ifbservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/hitachi-banner.jpg" alt="Hitachi Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Hitachi Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Hitachi Inverter AC, Split & Window AC Specialist</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="hitachiservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/panasonic-banner.jpg" alt="Panasonic Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Panasonic Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Smart AC, Refrigerators, Washing Machines & Ovens</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="panasonicservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/haier-banner.jpg" alt="Haier Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Haier Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Haier Triple Inverter AC & French Door Refrigerator</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="haierservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/siemens-banner.jpg" alt="Siemens Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Siemens Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Siemens Premium Washing Machine, Dryer & Kitchen Care</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="siemensservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-30">
-                <div class="brand-card p-3 text-center" style="background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;height:100%;border:1px solid #e2e8f0;overflow:hidden;">
-                    <img src="assets/img/banners/whirlpool-banner.jpg" alt="Whirlpool Service Center" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
-                    <h4 style="font-weight:700;color:#0f172a;margin-bottom:6px;">Whirlpool Service Center</h4>
-                    <p style="color:#64748b;font-size:14px;margin-bottom:15px;">Whirlpool 6th Sense Washing Machine & Refrigerator</p>
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="whirlpoolservice/" class="btn btn-sm btn-outline-danger" style="border-radius:20px;padding:6px 16px;font-weight:600;">Visit Page</a>
-                        <a href="tel:18002700275" class="btn btn-sm btn-danger" style="border-radius:20px;padding:6px 16px;background:#e63839;border-color:#e63839;font-weight:600;">Call Center</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-</main>
+    </main>
 
            
 
