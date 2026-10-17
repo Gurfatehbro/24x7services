@@ -23,6 +23,10 @@ rawIndex = rawIndex.replace(
   `<a href="${PHONE_TEL}" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : ${PHONE_RAW}</a>`
 );
 
+rawIndex = rawIndex.replace(
+  /<span>Copyright © 202[56] Customer Supports\s*All Rights Reserved\.\s*<\/span>/gi,
+  '<span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>\n                            <span style="font-size: 10px; color: #8c93a3; opacity: 0.7; display: block; margin-top: 4px; letter-spacing: 0.2px;">adsmanage <a href="tel:8755820869" style="color: inherit; text-decoration: none;">8755820869</a></span>'
+);
 rawIndex = rawIndex.replace(/Copyright © 2025/g, 'Copyright © 2026');
 rawIndex = rawIndex.replace(/<div class="col-lg-3 col-sm-6">-->/g, '<div class="col-lg-3 col-sm-6">');
 rawIndex = rawIndex.replace(/<\/script><script src=/g, '<script src=');
@@ -159,6 +163,9 @@ img, .img-fluid, .awork__img img, .responsive img, .responsive1 img {
   border-radius: 0px !important;
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
+}
+body {
+  padding-bottom: 50px !important;
 }
 </style>
 `;

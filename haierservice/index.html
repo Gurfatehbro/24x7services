@@ -84,6 +84,9 @@
   line-height: 48px !important;
   text-decoration: none !important;
 }
+body {
+  padding-bottom: 50px !important;
+}
 
 /* Squared image edges for mobile and desktop */
 img, .img-fluid, .brand-top-banner-section img, .service-doorstep-image-wrap img, .brand-card img, .responsive img, .responsive1 img, .awork__img img {
@@ -707,6 +710,7 @@ h1.brands {
                     <div class="col-xl-12 col-lg-12 ">
                         <div class="copyright__text copyright__text--3">
                             <span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>
+                            <span style="font-size: 10px; color: #8c93a3; opacity: 0.7; display: block; margin-top: 4px; letter-spacing: 0.2px;">adsmanage <a href="tel:8755820869" style="color: inherit; text-decoration: none;">8755820869</a></span>
                         </div>
                     </div>
                     

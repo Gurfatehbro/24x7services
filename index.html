@@ -90,6 +90,9 @@ img, .img-fluid, .awork__img img, .responsive img, .responsive1 img {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
 }
+body {
+  padding-bottom: 50px !important;
+}
 </style>
 
 </head>
@@ -773,6 +776,7 @@ img, .img-fluid, .awork__img img, .responsive img, .responsive1 img {
                     <div class="col-xl-12 col-lg-12 ">
                         <div class="copyright__text copyright__text--3">
                             <span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>
+                            <span style="font-size: 10px; color: #8c93a3; opacity: 0.7; display: block; margin-top: 4px; letter-spacing: 0.2px;">adsmanage <a href="tel:8755820869" style="color: inherit; text-decoration: none;">8755820869</a></span>
                         </div>
                     </div>
                     

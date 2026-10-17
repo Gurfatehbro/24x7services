@@ -186,7 +186,11 @@ function processBrandPage(brand, isSubfolder = true) {
     `<a href="${PHONE_TEL}" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : ${PHONE_RAW}</a>`
   );
 
-  // 5. Clean syntax glitches from template
+  // 5. Clean syntax glitches from template & add footer adsmanage credit
+  content = content.replace(
+    /<span>Copyright © 202[56] Customer Supports\s*All Rights Reserved\.\s*<\/span>/gi,
+    '<span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>\n                            <span style="font-size: 10px; color: #8c93a3; opacity: 0.7; display: block; margin-top: 4px; letter-spacing: 0.2px;">adsmanage <a href="tel:8755820869" style="color: inherit; text-decoration: none;">8755820869</a></span>'
+  );
   content = content.replace(/Copyright © 2025/g, 'Copyright © 2026');
   content = content.replace(/<div class="col-lg-3 col-sm-6">-->/g, '<div class="col-lg-3 col-sm-6">');
   content = content.replace(/<\/script><script src=/g, '<script src=');
@@ -375,6 +379,9 @@ function processBrandPage(brand, isSubfolder = true) {
   font-size: 20px !important;
   line-height: 48px !important;
   text-decoration: none !important;
+}
+body {
+  padding-bottom: 50px !important;
 }
 
 /* Squared image edges for mobile and desktop */
