@@ -314,35 +314,52 @@ body {
 				<p style="color:#000; text-align:center;">Fill the form below. We will get back to you soon.</p>		
 				<form action="msg.php" method="post">		
 					<label for="fname">Your Name*</label>	
-					<input type="text" id="fname" name="fname" placeholder="Your name..">	
+					<input type="text" id="fname" name="fname" placeholder="Your name.." required>	
 						
 					<label for="contact">Contact Number*</label>	
-					<input type="text" id="contact" name="contact" placeholder="Contact Number">	
+					<input type="tel" id="contact" name="contact" placeholder="Contact Number" required>	
+
+					<label for="brand">Select Brand / Company*</label>
+					<select id="brand" name="brand" required>
+						<option value="">Select Brand / Company*</option>
+						<option value="LG">LG</option>
+						<option value="Samsung">Samsung</option>
+						<option value="Whirlpool">Whirlpool</option>
+						<option value="Godrej">Godrej</option>
+						<option value="Bosch">Bosch</option>
+						<option value="IFB">IFB</option>
+						<option value="Hitachi">Hitachi</option>
+						<option value="Panasonic">Panasonic</option>
+						<option value="Haier">Haier</option>
+						<option value="Siemens">Siemens</option>
+						<option value="Other Multi-Brand">Other Multi-Brand</option>
+					</select>
 						
 					<label for="services">Services*</label>	
-					<select id="services" name="services">	
-						<option value="Select Appliances">Select Appliances</option>
-					  <option value="Refrigerator">Refrigerator</option>	
-					  <option value="Washing-Machine">Washing Machine</option>	
-					  <option value="Microwave">Microwave</option>	
-					  
+					<select id="services" name="services" required>	
+						<option value="">Select Appliances</option>
+						<option value="Refrigerator">Refrigerator</option>	
+						<option value="Washing-Machine">Washing Machine</option>	
+						<option value="Microwave">Microwave</option>	
+						<option value="Air-Conditioner">Air Conditioner</option>
+						<option value="Dishwasher">Dishwasher</option>
+						<option value="Other">Other Appliances</option>
 					</select>
 					
 					<label for="productold">Select Product Old*</label> 
-                	<select id="productold" name="productold"> 
-                	<option value="Select Appliances">Select Product Old*</option>
-                	<option value="1 Month to 18 Month">1 Month to 18 Month</option> 
-                	<option value="2 Years to 4 Years">2 Years to 4 Years</option> 
-                	<option value="4 Years to 7 Years">4 Years to 7 Years</option> 
-                	<option value="7 Years to 10 Years">7 Years to 10 Years</option> 
-                	<option value="10++ Years">10++ Years</option> 
+                	<select id="productold" name="productold" required> 
+						<option value="">Select Product Old*</option>
+						<option value="1 Month to 18 Month">1 Month to 18 Month</option> 
+						<option value="2 Years to 4 Years">2 Years to 4 Years</option> 
+						<option value="4 Years to 7 Years">4 Years to 7 Years</option> 
+						<option value="7 Years to 10 Years">7 Years to 10 Years</option> 
+						<option value="10++ Years">10++ Years</option> 
                 	</select> 
-
 						
-					<label for="fname">Your Address*</label>	
-					<input type="text" id="address" name="address" placeholder="Your Address..">	
+					<label for="address">Your Address (Delhi NCR)*</label>	
+					<input type="text" id="address" name="address" placeholder="Your Address in Delhi NCR.." required>	
 				  		
-					<input type="submit" name="Send" value="Submit">	
+					<input type="submit" name="Send" value="Submit Enquiry">	
 			  </form>		
 		</div>
 	</div>

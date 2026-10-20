@@ -469,4 +469,70 @@ $('.venobox').venobox();
 	  });
 	}
 
+	// -------------------------------------------------------------
+	// Instant WhatsApp Dispatch Handler for Enquiry Forms (Target: 8586935159)
+	// -------------------------------------------------------------
+	$(document).on('submit', 'form[action*="msg.php"]', function(e) {
+		var $form = $(this);
+		var brand = ($form.find('[name="brand"]').val() || $form.find('[name="company"]').val() || '').trim();
+		
+		// If brand is empty or default select prompt, infer from page context or URL
+		if (!brand || brand === 'Select Brand / Company*' || brand === 'Select Brand') {
+			var path = (window.location.pathname + window.location.href + ' ' + document.title).toLowerCase();
+			if (path.indexOf('whirlpool') !== -1) brand = 'Whirlpool';
+			else if (path.indexOf('samsung') !== -1) brand = 'Samsung';
+			else if (path.indexOf('lg') !== -1) brand = 'LG';
+			else if (path.indexOf('godrej') !== -1) brand = 'Godrej';
+			else if (path.indexOf('bosch') !== -1) brand = 'Bosch';
+			else if (path.indexOf('ifb') !== -1) brand = 'IFB';
+			else if (path.indexOf('hitachi') !== -1) brand = 'Hitachi';
+			else if (path.indexOf('panasonic') !== -1) brand = 'Panasonic';
+			else if (path.indexOf('haier') !== -1) brand = 'Haier';
+			else if (path.indexOf('siemens') !== -1 || path.indexOf('simens') !== -1) brand = 'Siemens';
+			else brand = 'Customer Care Support';
+		}
+
+		var name = ($form.find('[name="fname"]').val() || '').trim();
+		var contact = ($form.find('[name="contact"]').val() || '').trim();
+		var service = ($form.find('[name="services"]').val() || '').trim();
+		var age = ($form.find('[name="productold"]').val() || '').trim();
+		var address = ($form.find('[name="address"]').val() || '').trim();
+
+		// Construct WhatsApp text
+		var targetPhone = '918586935159'; // WhatsApp: 8586935159
+		var msg = '⚡ *NEW SERVICE BOOKING ENQUIRY* ⚡\n' +
+				  '━━━━━━━━━━━━━━━━━━━━\n' +
+				  '🏢 *Company / Brand:* ' + brand + '\n' +
+				  '👤 *Customer Name:* ' + (name || 'Not Provided') + '\n' +
+				  '📱 *Contact Number:* ' + (contact || 'Not Provided') + '\n' +
+				  '🛠️ *Service Required:* ' + (service || 'General Service') + '\n' +
+				  '⏳ *Product Age:* ' + (age || 'Not Specified') + '\n' +
+				  '📍 *Customer Address:* ' + (address || 'Delhi NCR') + '\n' +
+				  '━━━━━━━━━━━━━━━━━━━━\n' +
+				  '🌐 *Source Page:* ' + window.location.href;
+
+		var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + targetPhone + '&text=' + encodeURIComponent(msg);
+
+		// Record lead to backend CSV via background fetch/ajax
+		try {
+			if (window.fetch && window.FormData) {
+				fetch($form.attr('action'), {
+					method: 'POST',
+					body: new FormData($form[0]),
+					keepalive: true
+				}).catch(function() {});
+			} else {
+				$.ajax({
+					type: 'POST',
+					url: $form.attr('action'),
+					data: $form.serialize()
+				});
+			}
+		} catch (err) {}
+
+		// Redirect directly to WhatsApp
+		e.preventDefault();
+		window.location.href = whatsappUrl;
+	});
+
 })(jQuery);
