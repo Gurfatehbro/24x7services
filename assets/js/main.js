@@ -508,8 +508,7 @@ $('.venobox').venobox();
 				  '🛠️ *Service Required:* ' + (service || 'General Service') + '\n' +
 				  '⏳ *Product Age:* ' + (age || 'Not Specified') + '\n' +
 				  '📍 *Customer Address:* ' + (address || 'Delhi NCR') + '\n' +
-				  '━━━━━━━━━━━━━━━━━━━━\n' +
-				  '🌐 *Source Page:* ' + window.location.href;
+				  '━━━━━━━━━━━━━━━━━━━━';
 
 		var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + targetPhone + '&text=' + encodeURIComponent(msg);
 

@@ -52,8 +52,7 @@ $waText .= "🛠️ *Service Required:* " . ($service ?: 'General Appliance Serv
 $waText .= "⏳ *Product Age:* " . ($age ?: 'Not Specified') . "\n";
 $waText .= "📍 *Address (Delhi NCR):* " . ($address ?: 'Delhi NCR') . "\n";
 $waText .= "📅 *Date & Time:* " . date('d-m-Y h:i A') . "\n";
-$waText .= "━━━━━━━━━━━━━━━━━━━━\n";
-$waText .= "🌐 *Source Page:* " . $referer;
+$waText .= "━━━━━━━━━━━━━━━━━━━━";
 
 $whatsappUrl = 'https://api.whatsapp.com/send?phone=' . $targetWhatsApp . '&text=' . rawurlencode($waText);
 
