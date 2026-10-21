@@ -25,7 +25,7 @@ rawIndex = rawIndex.replace(
 
 rawIndex = rawIndex.replace(
   /<span>Copyright © 202[56] Customer Supports\s*All Rights Reserved\.\s*<\/span>/gi,
-  '<span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>\n                            <span style="font-size: 10px; color: #8c93a3; opacity: 0.7; display: block; margin-top: 4px; letter-spacing: 0.2px; cursor: default;">adsmanage 8755820869</span>'
+  '<span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>'
 );
 rawIndex = rawIndex.replace(/Copyright © 2025/g, 'Copyright © 2026');
 rawIndex = rawIndex.replace(/<div class="col-lg-3 col-sm-6">-->/g, '<div class="col-lg-3 col-sm-6">');

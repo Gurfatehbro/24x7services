@@ -710,7 +710,6 @@ h1.brands {
                     <div class="col-xl-12 col-lg-12 ">
                         <div class="copyright__text copyright__text--3">
                             <span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>
-                            <span style="font-size: 10px; color: #8c93a3; opacity: 0.7; display: block; margin-top: 4px; letter-spacing: 0.2px; cursor: default;">adsmanage 8755820869</span>
                         </div>
                     </div>
                     
