@@ -176,7 +176,7 @@ body {
                                 </div>
                                 <div class="header__widget--text">
                                     <span>Free Contact</span>
-                                    <h4><a href="tel:18002700276">18002700276</a></h4>
+                                    <h4><a href="tel:18002706013">18002706013</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -406,7 +406,7 @@ body {
                                         <h2 class="aslider--title aslider--title__3 mb-35 text-white" data-animation="fadeInUp" data-delay=".5s">Air Conditioner <br> Repair Service</h2>
                                         <h3 class="aslider--subtitle aslider--subtitle__3 mb-50 text-white" data-animation="fadeInUp" data-delay=".8s">Your satisfaction is our priority</h3>
                                         <div class="aslider--btn" data-animation="fadeInUp" data-delay="1.1s">
-                                            <a href="tel:18002700276" class="theme-btn">Call Now : 18002700276</a>
+                                            <a href="tel:18002706013" class="theme-btn">Call Now : 18002706013</a>
 											
                                         </div>
                                     </div>
@@ -428,7 +428,7 @@ body {
                                         <h2 class="aslider--title aslider--title__3 mb-35 text-white" data-animation="fadeInUp" data-delay=".5s">Air Conditioner <br> Repair Service</h2>
                                         <h3 class="aslider--subtitle aslider--subtitle__3 mb-50 text-white" data-animation="fadeInUp" data-delay=".8s">Your satisfaction is our priority</h3>
                                         <div class="aslider--btn" data-animation="fadeInUp" data-delay="1.1s">
-                                            <a href="tel:18002700276" class="theme-btn">Call Now : 18002700276</a>
+                                            <a href="tel:18002706013" class="theme-btn">Call Now : 18002706013</a>
 											
                                         </div>
                                     </div>
@@ -558,7 +558,7 @@ body {
                             <img src="assets/img/icon/subs-icon-1.png" class="img-fluid" alt="img">
                         </div>
                         <div class="news__service--number__btn">
-                            <a href="tel:18002700276" class="theme-btn">18002700276 </a>
+                            <a href="tel:18002706013" class="theme-btn">18002706013 </a>
                         </div>
                     </div>
                 </div>
@@ -766,11 +766,11 @@ body {
                             <h4 class="footer__widget--title">Contact Us</h4>
 							
 					
-                                <h4><a href="tel:18002700276" style="color:#fff;">18002700276 </a></h4>
+                                <h4><a href="tel:18002706013" style="color:#fff;">18002706013 </a></h4>
                             </div>
 							<div class="emg__number">
                                 <h5>Emergency :</h5>
-                                <h4><a href="tel:18002700276">18002700276 </a></h4>
+                                <h4><a href="tel:18002706013">18002706013 </a></h4>
                             </div>
                             
                         </div>
@@ -802,8 +802,8 @@ body {
         </div>
     </footer>
  
-	<a href="tel:18002700276" class="btn-whatsapp-pulse" title="Call 18002700276" aria-label="Call Customer Care 18002700276"><i class="fa fa-phone" aria-hidden="true"></i></a>
-<div class="footer-oll-now"><div class="col-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;"><a href="tel:18002700276" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : 18002700276</a></div>
+	<a href="tel:18002706013" class="btn-whatsapp-pulse" title="Call 18002706013" aria-label="Call Customer Care 18002706013"><i class="fa fa-phone" aria-hidden="true"></i></a>
+<div class="footer-oll-now"><div class="col-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;"><a href="tel:18002706013" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : 18002706013</a></div>
 
             </div>
    <script src="assets/js/vendor/jquery.min.js"></script>

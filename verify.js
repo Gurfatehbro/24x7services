@@ -31,14 +31,14 @@ for (const folder of folders) {
     issues++;
   }
   
-  // Count 18002700276 occurrences
-  const count = (content.match(/18002700276/g) || []).length;
+  // Count 18002706013 occurrences
+  const count = (content.match(/18002706013/g) || []).length;
   
   // Check floating button
-  const hasFloating = content.includes('btn-whatsapp-pulse') && content.includes('tel:18002700276');
+  const hasFloating = content.includes('btn-whatsapp-pulse') && content.includes('tel:18002706013');
   
   // Check footer bar
-  const hasFooterBar = content.includes('footer-oll-now') && content.includes('Call Now : 18002700276');
+  const hasFooterBar = content.includes('footer-oll-now') && content.includes('Call Now : 18002706013');
   
   console.log(`${folder}/index.html: phoneCount=${count}, floatingBtn=${hasFloating}, footerBar=${hasFooterBar}`);
 }

@@ -383,7 +383,7 @@ h1.brands {
                                 </div>
                                 <div class="header__widget--text">
                                     <span>Free Contact</span>
-                                    <h4><a href="tel:18002700276">18002700276</a></h4>
+                                    <h4><a href="tel:18002706013">18002706013</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -521,8 +521,8 @@ h1.brands {
    <p style="color:#000000;font-weight:bold;font-size:20px;text-align:center;">Siemens  Customer Service Center</p><br/>
  
  
-<h3 class="bold"><span style="color:#ff0000;">Call Us Now</span> <a href="tel:18002700276">18002700276</a></h3><br/>
-<p><a href="">Siemens  Repair Service Centre </a>, Customer Care, Helpline: <a href="tel:18002700276">18002700276</a></p><br/>
+<h3 class="bold"><span style="color:#ff0000;">Call Us Now</span> <a href="tel:18002706013">18002706013</a></h3><br/>
+<p><a href="">Siemens  Repair Service Centre </a>, Customer Care, Helpline: <a href="tel:18002706013">18002706013</a></p><br/>
 </div>
 <p class="p-left"><strong>Siemens  Customer Service Center</strong>, Customer Care, Helpline: Welcome To The Siemens  Repair and Service Centre In Delhi, The Main Mission Of Establishing “<strong>Siemens  Customer Service Center</strong>” Is To Provide Services At Ease At Your Fingertips To Save Time And Efforts</p>
 <div class="center">
@@ -538,7 +538,7 @@ h1.brands {
                     <div class="text-center mb-25">
                         <h2 style="color:#e63839; font-weight:800; font-size:26px; margin-bottom:6px;">Siemens Enquiry & Doorstep Service Booking</h2>						
                         <p style="color:#64748b; font-size:15px; margin-bottom:0;">Doorstep Service in Delhi NCR. Fill the form below — we will get back to you within 15 minutes.</p>
-                        <p style="color:#0f172a; font-weight:600; font-size:14px; margin-top:6px;">Or Call Now For Instant Assistance: <a href="tel:18002700276" style="color:#e63839; font-weight:800;">📞 18002700276</a></p>
+                        <p style="color:#0f172a; font-weight:600; font-size:14px; margin-top:6px;">Or Call Now For Instant Assistance: <a href="tel:18002706013" style="color:#e63839; font-weight:800;">📞 18002706013</a></p>
                     </div>		
                     <form action="../msg.php" method="post">
                         <input type="hidden" name="brand" value="Siemens">
@@ -638,7 +638,7 @@ h1.brands {
 
 
 
-<div class="call-now"><a href="tel:18002700276" style="color:#ffffff;text-decoration:none;display:block;"><i class="far fa-phone"></i> Call Now 18002700276</a></div>
+<div class="call-now"><a href="tel:18002706013" style="color:#ffffff;text-decoration:none;display:block;"><i class="far fa-phone"></i> Call Now 18002706013</a></div>
 
                     </div>
                     
@@ -683,11 +683,11 @@ h1.brands {
                             <h4 class="footer__widget--title">Contact Us</h4>
 							
 					
-                                <h4><a href="tel:18002700276" style="color:#fff;">18002700276 </a></h4>
+                                <h4><a href="tel:18002706013" style="color:#fff;">18002706013 </a></h4>
                             </div>
 							<div class="emg__number">
                                 <h5>Emergency :</h5>
-                                <h4><a href="tel:18002700276">18002700276 </a></h4>
+                                <h4><a href="tel:18002706013">18002706013 </a></h4>
                             </div>
                             
                         </div>
@@ -719,8 +719,8 @@ h1.brands {
         </div>
     </footer>
  
-	<a href="tel:18002700276" class="btn-whatsapp-pulse" title="Call 18002700276" aria-label="Call Customer Care 18002700276"><i class="fa fa-phone" aria-hidden="true"></i></a>
-<div class="footer-oll-now"><div class="col-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;"><a href="tel:18002700276" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : 18002700276</a></div>
+	<a href="tel:18002706013" class="btn-whatsapp-pulse" title="Call 18002706013" aria-label="Call Customer Care 18002706013"><i class="fa fa-phone" aria-hidden="true"></i></a>
+<div class="footer-oll-now"><div class="col-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;"><a href="tel:18002706013" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : 18002706013</a></div>
 
             </div>
    <script src="../assets/js/vendor/jquery.min.js"></script>

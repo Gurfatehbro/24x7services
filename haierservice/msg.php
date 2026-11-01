@@ -1,6 +1,6 @@
 <?php
 // Customer Care Support - Enquiry & WhatsApp Dispatch Handler
-$phone = '18002700276';
+$phone = '18002706013';
 $targetWhatsApp = '918586935159'; // Target Number: 8586935159
 
 $name = isset($_POST['fname']) ? htmlspecialchars(trim($_POST['fname'])) : '';

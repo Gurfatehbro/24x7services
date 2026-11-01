@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const PHONE_RAW = '18002700276';
-const PHONE_TEL = 'tel:18002700276';
+const PHONE_RAW = '18002706013';
+const PHONE_TEL = 'tel:18002706013';
 
 const brands = [
   {
@@ -172,19 +172,19 @@ function processPage(brand, isSubfolder = true) {
 
   // 2. Make the "Need More Help?" call-now box fully clickable
   content = content.replace(
-    /<div class="call-now">\s*<i class="far fa-phone"><\/i>\s*Call Now\s*18002700276\s*<\/div>/gi,
+    /<div class="call-now">\s*<i class="far fa-phone"><\/i>\s*Call Now\s*18002706013\s*<\/div>/gi,
     `<div class="call-now"><a href="${PHONE_TEL}" style="color:#ffffff;text-decoration:none;display:block;"><i class="far fa-phone"></i> Call Now ${PHONE_RAW}</a></div>`
   );
 
   // 3. Floating pulse button
   content = content.replace(
-    /<a href="tel:18002700276\s*" class="btn-whatsapp-pulse">[\s\S]*?<i class="fa fa-phone"><\/i>[\s\S]*?<\/a>/gi,
+    /<a href="tel:18002706013\s*" class="btn-whatsapp-pulse">[\s\S]*?<i class="fa fa-phone"><\/i>[\s\S]*?<\/a>/gi,
     `<a href="${PHONE_TEL}" class="btn-whatsapp-pulse" title="Call ${PHONE_RAW}" aria-label="Call Customer Care ${PHONE_RAW}"><i class="fa fa-phone" aria-hidden="true"></i></a>`
   );
 
   // 4. Footer bottom call bar
   content = content.replace(
-    /<a href="tel:18002700276\s*" class="col-now-footer">Call Now : 18002700276\s*<\/a>/gi,
+    /<a href="tel:18002706013\s*" class="col-now-footer">Call Now : 18002706013\s*<\/a>/gi,
     `<a href="${PHONE_TEL}" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : ${PHONE_RAW}</a>`
   );
 

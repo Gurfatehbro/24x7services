@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const PHONE_RAW = '18002700276';
-const PHONE_TEL = 'tel:18002700276';
+const PHONE_RAW = '18002706013';
+const PHONE_TEL = 'tel:18002706013';
 
 let rawIndex = fs.readFileSync('./raw_source/index.php', 'utf-8');
 
@@ -13,13 +13,13 @@ rawIndex = rawIndex.replace(/011-69290873/g, PHONE_RAW);
 
 // Floating call button
 rawIndex = rawIndex.replace(
-  /<a href="tel:18002700276\s*" class="btn-whatsapp-pulse">[\s\S]*?<i class="fa fa-phone"><\/i>[\s\S]*?<\/a>/gi,
+  /<a href="tel:18002706013\s*" class="btn-whatsapp-pulse">[\s\S]*?<i class="fa fa-phone"><\/i>[\s\S]*?<\/a>/gi,
   `<a href="${PHONE_TEL}" class="btn-whatsapp-pulse" title="Call ${PHONE_RAW}" aria-label="Call Customer Care ${PHONE_RAW}"><i class="fa fa-phone" aria-hidden="true"></i></a>`
 );
 
 // Footer call bar
 rawIndex = rawIndex.replace(
-  /<a href="tel:18002700276\s*" class="col-now-footer">Call Now : 18002700276\s*<\/a>/gi,
+  /<a href="tel:18002706013\s*" class="col-now-footer">Call Now : 18002706013\s*<\/a>/gi,
   `<a href="${PHONE_TEL}" class="col-now-footer"><i class="fa fa-phone" style="margin-right:6px;"></i>Call Now : ${PHONE_RAW}</a>`
 );
 
