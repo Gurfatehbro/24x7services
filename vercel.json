@@ -1,0 +1,94 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/msg.php",
+      "destination": "/enquiry-success.html",
+      "permanent": true
+    },
+    {
+      "source": "/lg-service-center.php",
+      "destination": "/lgservice/",
+      "permanent": true
+    },
+    {
+      "source": "/samsung-service-center.php",
+      "destination": "/samsungservice/",
+      "permanent": true
+    },
+    {
+      "source": "/whirlpool-service-center.php",
+      "destination": "/whirlpoolservice/",
+      "permanent": true
+    },
+    {
+      "source": "/godrej-service-center.php",
+      "destination": "/godrejservice/",
+      "permanent": true
+    },
+    {
+      "source": "/bosch-service-center.php",
+      "destination": "/boschservice/",
+      "permanent": true
+    },
+    {
+      "source": "/ifb-service-center.php",
+      "destination": "/ifbservice/",
+      "permanent": true
+    },
+    {
+      "source": "/hitachi-service-center.php",
+      "destination": "/hitachiservice/",
+      "permanent": true
+    },
+    {
+      "source": "/panasonic-service-center.php",
+      "destination": "/panasonicservice/",
+      "permanent": true
+    },
+    {
+      "source": "/haier-service-center.php",
+      "destination": "/haierservice/",
+      "permanent": true
+    },
+    {
+      "source": "/siemens-service-center.php",
+      "destination": "/siemensservice/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)\\.php",
+      "destination": "/$1",
+      "permanent": true
+    }
+  ]
+}

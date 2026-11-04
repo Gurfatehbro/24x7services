@@ -470,13 +470,23 @@ $('.venobox').venobox();
 	}
 
 	// -------------------------------------------------------------
-	// Instant WhatsApp Dispatch Handler for Enquiry Forms (Target: 8586935159)
+	// Compliance-Ready Enquiry Form Submission Handler (No Forced Redirection)
 	// -------------------------------------------------------------
-	$(document).on('submit', 'form[action*="msg.php"]', function(e) {
+	$(document).on('submit', 'form[action*="msg.php"], form[action*="/api/enquiry"], #contact-enquiry-form', function(e) {
+		e.preventDefault();
 		var $form = $(this);
+		var $submitBtn = $form.find('input[type="submit"], button[type="submit"]');
+		var originalBtnText = $submitBtn.is('input') ? $submitBtn.val() : $submitBtn.html();
+
+		// Disable submit button while sending
+		$submitBtn.prop('disabled', true);
+		if ($submitBtn.is('input')) {
+			$submitBtn.val('Registering Request...');
+		} else {
+			$submitBtn.html('Registering Request...');
+		}
+
 		var brand = ($form.find('[name="brand"]').val() || $form.find('[name="company"]').val() || '').trim();
-		
-		// If brand is empty or default select prompt, infer from page context or URL
 		if (!brand || brand === 'Select Brand / Company*' || brand === 'Select Brand') {
 			var path = (window.location.pathname + window.location.href + ' ' + document.title).toLowerCase();
 			if (path.indexOf('whirlpool') !== -1) brand = 'Whirlpool';
@@ -489,7 +499,7 @@ $('.venobox').venobox();
 			else if (path.indexOf('panasonic') !== -1) brand = 'Panasonic';
 			else if (path.indexOf('haier') !== -1) brand = 'Haier';
 			else if (path.indexOf('siemens') !== -1 || path.indexOf('simens') !== -1) brand = 'Siemens';
-			else brand = 'Customer Care Support';
+			else brand = 'Multi-Brand Service Support';
 		}
 
 		var name = ($form.find('[name="fname"]').val() || '').trim();
@@ -498,8 +508,7 @@ $('.venobox').venobox();
 		var age = ($form.find('[name="productold"]').val() || '').trim();
 		var address = ($form.find('[name="address"]').val() || '').trim();
 
-		// Construct WhatsApp text
-		var targetPhone = '918586935159'; // WhatsApp: 8586935159
+		var targetPhone = '918586935159'; // Support desk WhatsApp
 		var msg = '⚡ *NEW SERVICE BOOKING ENQUIRY* ⚡\n' +
 				  '━━━━━━━━━━━━━━━━━━━━\n' +
 				  '🏢 *Company / Brand:* ' + brand + '\n' +
@@ -510,28 +519,48 @@ $('.venobox').venobox();
 				  '📍 *Customer Address:* ' + (address || 'Delhi NCR') + '\n' +
 				  '━━━━━━━━━━━━━━━━━━━━';
 
-		var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + targetPhone + '&text=' + encodeURIComponent(msg);
+		var optionalWhatsappUrl = 'https://api.whatsapp.com/send?phone=' + targetPhone + '&text=' + encodeURIComponent(msg);
 
-		// Record lead to backend CSV via background fetch/ajax
-		try {
-			if (window.fetch && window.FormData) {
-				fetch($form.attr('action'), {
-					method: 'POST',
-					body: new FormData($form[0]),
-					keepalive: true
-				}).catch(function() {});
+		// Post to Vercel API endpoint
+		var endpoint = '/api/enquiry';
+		$.ajax({
+			type: 'POST',
+			url: endpoint,
+			data: $form.serialize(),
+			dataType: 'json',
+			timeout: 8000
+		}).always(function() {
+			// Re-enable button
+			$submitBtn.prop('disabled', false);
+			if ($submitBtn.is('input')) {
+				$submitBtn.val(originalBtnText);
 			} else {
-				$.ajax({
-					type: 'POST',
-					url: $form.attr('action'),
-					data: $form.serialize()
-				});
+				$submitBtn.html(originalBtnText);
 			}
-		} catch (err) {}
 
-		// Redirect directly to WhatsApp
-		e.preventDefault();
-		window.location.href = whatsappUrl;
+			// Clear previous notice if any
+			$form.find('.enquiry-result-alert').remove();
+
+			// Construct in-page voluntary confirmation (NO AUTOMATIC REDIRECT)
+			var successHtml = '<div class="enquiry-result-alert alert alert-success text-center p-4 my-3" style="background:#ecfdf5; border:1px solid #10b981; border-radius:8px; margin-top:20px;">' +
+				'<h4 style="color:#065f46; font-weight:700; margin-bottom:8px;"><i class="fa fa-check-circle" style="color:#10b981; margin-right:6px;"></i> Enquiry Registered Successfully!</h4>' +
+				'<p style="color:#047857; margin-bottom:12px; font-size:14px; line-height:1.6;">Thank you! Your service request has been logged. Our technician will contact you at <strong>' + (contact || 'your number') + '</strong> within 15 minutes.</p>' +
+				'<p style="color:#065f46; font-size:13px; margin-bottom:14px;">Toll-Free Helpline: <a href="tel:18002706013" style="font-weight:700; color:#e63839;">18002706013</a></p>' +
+				'<a href="' + optionalWhatsappUrl + '" target="_blank" rel="noopener noreferrer" class="theme-btn" style="background:#25D366; color:#ffffff; padding:10px 20px; font-weight:700; border-radius:6px; display:inline-block; text-decoration:none; font-size:14px;">' +
+				'<i class="fab fa-whatsapp" style="margin-right:6px;"></i> Chat on WhatsApp (Optional)' +
+				'</a>' +
+			'</div>';
+
+			$form.prepend(successHtml);
+			if ($form[0] && $form[0].reset) {
+				$form[0].reset();
+			}
+
+			// Smooth scroll to success message
+			$('html, body').animate({
+				scrollTop: $form.offset().top - 80
+			}, 500);
+		});
 	});
 
 })(jQuery);
