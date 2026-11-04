@@ -82,25 +82,9 @@ rawIndex = rawIndex.replace(
   'We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.'
 );
 
-// Enhance navigation menu to include Brand Service Centers dropdown
-const brandMenuHtml = `
-<li class="menu-item-has-children"><a href="#">BRAND CENTERS</a>
-    <ul class="sub-menu">
-        <li><a href="lgservice/">LG Service Center</a></li>
-        <li><a href="godrejservice/">Godrej Service Center</a></li>
-        <li><a href="samsungservice/">Samsung Service Center</a></li>
-        <li><a href="boschservice/">Bosch Service Center</a></li>
-        <li><a href="ifbservice/">IFB Service Center</a></li>
-        <li><a href="hitachiservice/">Hitachi Service Center</a></li>
-        <li><a href="panasonicservice/">Panasonic Service Center</a></li>
-        <li><a href="haierservice/">Haier Service Center</a></li>
-        <li><a href="siemensservice/">Siemens Service Center</a></li>
-        <li><a href="whirlpoolservice/">Whirlpool Service Center</a></li>
-    </ul>
-</li>
-`;
-
-rawIndex = rawIndex.replace('<li class="menu-item-has-children"><a href="">SERVICES</a>', brandMenuHtml + '\n<li class="menu-item-has-children"><a href="#">SERVICES</a>');
+// Brand Centers menu removed from header per user requirement
+// const brandMenuHtml = ...
+rawIndex = rawIndex.replace('<li class="menu-item-has-children"><a href="">SERVICES</a>', '<li class="menu-item-has-children"><a href="#">SERVICES</a>');
 
 // Add pulse styling
 const customPulseStyle = `
