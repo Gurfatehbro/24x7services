@@ -335,20 +335,22 @@ h1.brands {
         <div class="header-top header-top-3 black-soft-bg d-none d-lg-block">
             <div class="custom-container">
                 <div class="row align-items-center">
-                    <div class="col-xl-4 col-lg-4">
+                    <div class="col-xl-3 col-lg-3">
                         <div class="header-top-left header-top-left-3">
                             <span><i class="flaticon-return-of-investment"></i> We do not received extra charges</span>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="header-top-right header-top-right-3">
+                    <div class="col-xl-9 col-lg-9">
+                                                <div class="header-top-right header-top-right-3">
                             <ul>
                                 <li class="header--terms">
-                                    <a href="index.php">About Us</a>
-                                    <a href="index.php">Terms & Condition</a>
-                                    <a href="#contact">Get A Quote</a>
+                                    <a href="about-us.html">About Us</a>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                                    <a href="refund-policy.html">Refund Policy</a>
+                                    <a href="cancellation-policy.html">Cancellation Policy</a>
+                                    <a href="contact-us.html">Contact Us</a>
                                 </li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -401,31 +403,14 @@ h1.brands {
                             <div class="main-menu main-menu-3 d-none d-lg-block">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li><a href="index.php">HOME</a>
-                                            
-                                        </li>
-										<li><a href="index.php">About Us</a>
-                                            
-                                        </li>
-                                        
-                                        <li class="menu-item-has-children"><a href="">SERVICES</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#contact">Refrigerator Repair</a></li>
-                                        <li><a href="#contact">Microwave Repair</a></li>
-                                        <li><a href="#contact">Washing Machine Repair</a></li>
-                                        
-                                        </ul>
-                                    </li>
-										<li><a href="index.php">Contact Us</a>
-                                            
-                                        </li>
-										<li><a href="index.php">Privacy Policy</a>
-                                            
-                                        </li>
-                                        <li class=><a href="index.php">Terms & Conditions</a>
-                                            
-                                        </li>
-                                        
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="index.html#services">SERVICES</a></li>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                                        <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -654,67 +639,69 @@ h1.brands {
            
 
     <!-- footer area start here -->
-    <footer data-background="assets/img/footer/footer-bg.jpg">
-        <section class="footer-area pt-115 pb-90">
-            <div class="custom-container">
-                <div class="row">
-                     <div class="col-lg-3 col-sm-6">
-                      <div class="footer__widget mb-30 wow fadeInUp" data-wow-delay=".3s"> 
-                              <h4 class="footer__widget--title">About Us</h4> 
-                            <p> At 24X7 Customer Care Support, your comfort is our top priority. We provide professional refrigerator, microwave, washing machine, and air conditioner repair, installation, and maintenance services across Delhi NCR for all leading brands. Our goal is to deliver reliable performance, energy savings, and peace of mind through expert care and top-quality service.</p> 
-                           
-                             
-                            
-                    </div>  
-                   </div> 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer__widget mb-30 pl-80 wow fadeInUp" data-wow-delay=".6s">
-                            <h4 class="footer__widget--title">Services</h4>
-                            <ul class="widget__links">
-                                <li><a href="#contact">Refrigerator Repair</a></li>
-                                        <li><a href="#contact">Microwave Repair</a></li>
-                                        <li><a href="#contact">Washing Machine Repair</a></li>
-                                       
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="footer__widget mb-30 fix wow fadeInUp" data-wow-delay=".9s">
-                            <h4 class="footer__widget--title">Contact Us</h4>
-							
-					
-                                <h4><a href="tel:18002706013" style="color:#fff;">18002706013 </a></h4>
-                            </div>
-							<div class="emg__number">
-                                <h5>Emergency :</h5>
-                                <h4><a href="tel:18002706013">18002706013 </a></h4>
-                            </div>
-                            
-                        </div>
-                  
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="footer__widget mb-30 pl-85 wow fadeInUp" data-wow-delay="1.2s">
-                            <h4 class="footer__widget--title">Address : </h4>
-                                <p>Delhi, India</p>
-                                
-                               
-                         </div>
-                    </div>
+    <!-- Footer Area -->
+    <footer class="footer-area footer-area-3 pt-60" style="background:#0f172a; color:#cbd5e1;">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <h4 style="color:#ffffff; margin-bottom:18px;">Company</h4>
+                    <ul style="list-style:none; padding:0;">
+                        <li style="margin-bottom:8px;"><a href="index.html" style="color:#cbd5e1;">Home</a></li>
+                        <li style="margin-bottom:8px;"><a href="about-us.html" style="color:#cbd5e1;">About Us</a></li>
+                        <li style="margin-bottom:8px;"><a href="index.html#services" style="color:#cbd5e1;">Our Services</a></li>
+                        <li style="margin-bottom:8px;"><a href="contact-us.html" style="color:#cbd5e1;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <h4 style="color:#ffffff; margin-bottom:18px;">Useful Links</h4>
+                    <ul style="list-style:none; padding:0;">
+                        <li style="margin-bottom:8px;"><a href="privacy-policy.html" style="color:#cbd5e1;">Privacy Policy</a></li>
+                        <li style="margin-bottom:8px;"><a href="refund-policy.html" style="color:#cbd5e1;">Refund Policy</a></li>
+                        <li style="margin-bottom:8px;"><a href="cancellation-policy.html" style="color:#cbd5e1;">Cancellation Policy</a></li>
+                        <li style="margin-bottom:8px;"><a href="terms-and-conditions.html" style="color:#cbd5e1;">Terms & Conditions</a></li>
+                        <li style="margin-bottom:8px;"><a href="about-us.html" style="color:#cbd5e1;">About Us</a></li>
+                        <li style="margin-bottom:8px;"><a href="contact-us.html" style="color:#cbd5e1;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <h4 style="color:#ffffff; margin-bottom:18px;">Our Services</h4>
+                    <ul style="list-style:none; padding:0;">
+                        <li style="margin-bottom:8px;"><a href="index.html#services" style="color:#cbd5e1;">Washing Machine Repair</a></li>
+                        <li style="margin-bottom:8px;"><a href="index.html#services" style="color:#cbd5e1;">Refrigerator Repair</a></li>
+                        <li style="margin-bottom:8px;"><a href="index.html#services" style="color:#cbd5e1;">Microwave Repair</a></li>
+                        <li style="margin-bottom:8px;"><a href="index.html#services" style="color:#cbd5e1;">Air Conditioner Repair</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <h4 style="color:#ffffff; margin-bottom:18px;">Contact Info</h4>
+                    <p style="margin-bottom:8px;"><i class="fa fa-map-marker-alt me-2" style="color:#e63839;"></i> Delhi NCR, India</p>
+                    <h3 style="color:#e63839; font-weight:800; margin:10px 0;"><a href="tel:18002706013" style="color:#e63839;">18002706013</a></h3>
+                    <p style="margin:0;"><i class="fas fa-headset me-2" style="color:#e63839;"></i> 24/7 Helpline Support</p>
                 </div>
             </div>
-        </section>
-        
-        <div class="copyright-area copyright-border">
-            <div class="custom-container">
-                <div class="row align-items-center">
-                    <div class="col-xl-12 col-lg-12 ">
-                        <div class="copyright__text copyright__text--3">
-                            <span>Copyright © 2026 Customer Supports  All Rights Reserved. </span>
-                        </div>
-                    </div>
-                    
-                   
+
+            <div class="row pt-4 mt-4 border-top" style="border-top:1px solid rgba(255,255,255,0.1) !important;">
+                <div class="col-md-12 text-center" style="color:#94a3b8; font-size:13px; line-height:1.7;">
+                    <p class="mb-2">
+                        Our Service Center is an independent Home-applianceservice service provider in Delhi NCR. 
+                        We fix all appliance problems at your doorstep.
+                    </p>
+
+                    <p class="mb-2">
+                        <strong>Disclaimer:</strong> We are not affiliated with, authorized by, or associated with any appliance brand. 
+                        All brand names are used only for reference purposes.
+                    </p>
+
+                    <p class="mb-0">
+                        © 2026 24X7 Customer Support | All Rights Reserved
+                    </p>
                 </div>
+            </div>
+        </div>
+
+        <div class="copyright-area mt-3" style="background:#020617; padding:15px 0; text-align:center; color:#64748b; font-size:13px;">
+            <div class="custom-container">
+                <p style="margin:0;">Copyright © 2026 Customer Supports. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
